@@ -1,6 +1,10 @@
+"use effect";
+import {useSearchParams} from "next/navigation"
+
 import './globals.css'
 
 export default function RootLayout({ children }) {
+  const router = useSearchParams();
   return (
     <html lang="en">
       {/*
