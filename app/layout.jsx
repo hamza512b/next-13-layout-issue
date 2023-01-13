@@ -1,10 +1,11 @@
-"use effect";
+"use client";
 import {useSearchParams} from "next/navigation"
 
 import './globals.css'
 
 export default function RootLayout({ children }) {
   const router = useSearchParams();
+  console.log(router);
   return (
     <html lang="en">
       {/*
